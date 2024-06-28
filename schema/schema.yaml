@@ -4,7 +4,7 @@ required:
   - planet:ca_ratio
   - planet:qa
 properties:
-  planet:mcid:
+  planet:micd:
     type: float
   planet:ca_ratio:
     type: float
