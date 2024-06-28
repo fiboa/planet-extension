@@ -31,5 +31,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - First release
 
+### Added
+ - Readme with description
+ - Attributes for micd, qa and ca_ratio
+
 [Unreleased]: <https://github.com/fiboa/planet-extension/compare/v0.1.0...main>
 [v0.1.0]: <https://github.com/fiboa/planet-extension/tree/v0.1.0>
