@@ -1,7 +1,7 @@
 # Planet Field Boundary Extension Specification
 
 - **Title:** Planet Field Boundary
-- **Identifier:** <https://fiboa.github.io/planet-fb-extension/v0.1.0/schema.yaml>
+- **Identifier:** <https://fiboa.github.io/planet-extension/v0.1.0/schema.yaml>
 - **Property Name Prefix:** planet
 - **Extension Maturity Classification:** Proposal
 - **Owner**: @cholmes
