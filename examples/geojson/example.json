@@ -1,11 +1,22 @@
 {
+    "fiboa":
+    {
+        "fiboa_version": "0.2.0",
+        "fiboa_extensions":
+        [
+            "https://fiboa.github.io/pl-extension/v0.1.0/schema.yaml"
+        ]
+    },
     "type": "FeatureCollection",
-    "features": [
+    "features":
+    [
         {
             "type": "Feature",
-            "geometry": {
+            "geometry":
+            {
                 "type": "Polygon",
-                "coordinates": [
+                "coordinates":
+                [
                     [
                         [
                             -3.337705,
@@ -54,7 +65,8 @@
                     ]
                 ]
             },
-            "properties": {
+            "properties":
+            {
                 "area": 0.13337578,
                 "planet:ca_ratio": 0.6967705,
                 "determination_datetime": "2023-01-01T00:00:00Z",
@@ -63,7 +75,8 @@
                 "planet:qa": 0
             },
             "id": "30",
-            "bbox": [
+            "bbox":
+            [
                 -3.337743,
                 6.375003,
                 -3.337369,
