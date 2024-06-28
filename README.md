@@ -31,7 +31,7 @@ The properties in the table below can be used in these parts of fiboa documents:
 
 | Property Name   | Type   | Description |
 | --------------- | ------ | ----------- |
-| planet:mcid | float | **REQUIRED** Maximum Inscribed Circle Diameter (MICD)  is an intuitive proxy for the width of a field, even in case of rotated and narrow-but-curved fields.  |
+| planet:micd | float | **REQUIRED** Maximum Inscribed Circle Diameter (MICD)  is an intuitive proxy for the width of a field, even in case of rotated and narrow-but-curved fields.  |
 | planet:ca_ratio | float  | **REQUIRED** The Circumference-Area ratio (CA ratio) is calculated by dividing the circumference of a given polygon by the square root of its area. This ratio is then adjusted so that a circle corresponds to 0, and scaled so that a square corresponds to 1 |
 | planet:qa | uint8 |  **REQUIRED** Quality Assessment attribute, either 0 (good, micd > 30m), 1 (quality not guaranteed, micd < 30m) or 2 (polygons intersecting data availability grid) |
 
