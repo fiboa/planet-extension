@@ -9,8 +9,8 @@
 This document explains the Planet Field Boundary Extension to the
 [Field Boundaries for Agriculture (fiboa) Specification](https://github.com/fiboa/specification).
 
-Planet produces fully automated field boundaries from satellite imagery for anywhere on earth. The full 
-[technical specification](https://planet.widen.net/s/5vq8w5wjvf/2403.08_mar-9444-field-boundaries-technical-specification-sheet-3) explains all 
+Planet produces fully automated field boundaries from satellite imagery for anywhere on earth. The full
+[technical specification](https://planet.widen.net/s/5vq8w5wjvf/2403.08_mar-9444-field-boundaries-technical-specification-sheet-3) explains all
 the details of the methodology, and the attributes of the data. Data is currently distributed in a GeoPackage. It can
 be converted to fiboa with the [fiboa cli] - you can see [the code for Planet conversion](https://github.com/fiboa/cli/blob/main/fiboa_cli/datasets/planet_afb.py).
 
