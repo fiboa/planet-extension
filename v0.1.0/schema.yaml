@@ -1,0 +1,15 @@
+$schema: https://fiboa.github.io/schema/v0.1.0/schema.json
+required:
+  - planet:micd
+  - planet:ca_ratio
+  - planet:qa
+properties:
+  planet:micd:
+    type: float
+  planet:ca_ratio:
+    type: float
+  planet:qa:
+    type: uint8
+    minimum: 0
+    maximum: 2
+    
