@@ -1,8 +1,15 @@
 $schema: https://fiboa.github.io/schema/v0.1.0/schema.json
 required:
-  - template:field1
+  - planet:mcid
+  - planet:ca_ratio
+  - planet:qa
 properties:
-  template:field1:
+  planet:mcid:
+    type: float
+  planet:ca_ratio:
+    type: float
+  planet:qa:
     type: uint8
-  template:field2:
-    type: string
+    minimum: 0
+    maximum: 2
+    
