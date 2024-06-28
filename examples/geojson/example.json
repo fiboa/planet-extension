@@ -57,12 +57,12 @@
             "properties": {
                 "area": 0.13337578,
                 "planet:ca_ratio": 0.6967705,
-                "determination_datetime": "2023-01-01 00:00:00",
+                "determination_datetime": "2023-01-01T00:00:00Z",
                 "determination_method": "auto-imagery",
-                "id": "30",
                 "planet:micd": 31.412167,
                 "planet:qa": 0
             },
+            "id": "30",
             "bbox": [
                 -3.337743,
                 6.375003,
