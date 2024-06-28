@@ -4,7 +4,7 @@
         "fiboa_version": "0.2.0",
         "fiboa_extensions":
         [
-            "https://fiboa.github.io/pl-extension/v0.1.0/schema.yaml"
+            "https://raw.githubusercontent.com/fiboa/planet-extension/main/schema/schema.yaml"
         ]
     },
     "type": "FeatureCollection",
