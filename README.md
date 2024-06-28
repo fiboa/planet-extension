@@ -57,7 +57,6 @@ for the CA ratio is as follows:
 
 ![CA Ratio formula](https://github.com/cholmes/planet-fb-extension/assets/407017/657b8d3d-eee4-4d45-adaa-c73ffe8052f9)
 
-
 The CA ratio can be used in conjunction to the Area and MICD attributes to identify polygons of circular shape,
 e.g. with CA ratio close to 0, of squared shape, e.g. with CA ratio around 1, or of more irregular shape, having CA
 ratio larger than 10. Examples of CA ratio are shown in Figure 3.
