@@ -1,13 +1,14 @@
 # Planet Field Boundary Extension Specification
 
 - **Title:** Planet Field Boundary
-- **Identifier:** <https://fiboa.github.io/planet-extension/v0.1.0/schema.yaml>
+- **Identifier:** <https://fiboa.org/planet-extension/v0.2.0/schema.yaml>
 - **Property Name Prefix:** planet
 - **Extension Maturity Classification:** Proposal
 - **Owner**: @cholmes
 
 This document explains the Planet Field Boundary Extension to the
-[Field Boundaries for Agriculture (fiboa) Specification](https://github.com/fiboa/specification).
+[Field Boundaries for Agriculture (fiboa)](https://fiboa.org) and
+[Vecorel](https://vecorel.org) specifications.
 
 Planet produces fully automated field boundaries from satellite imagery for anywhere on earth. The full
 [technical specification](https://planet.widen.net/s/5vq8w5wjvf/2403.08_mar-9444-field-boundaries-technical-specification-sheet-3) explains all
@@ -24,16 +25,11 @@ Any Planet field boundary output can be converted with `fiboa convert planet_afb
 
 ## Properties
 
-The properties in the table below can be used in these parts of fiboa documents:
-
-- [ ] Collection
-- [x] Feature Properties
-
-| Property Name   | Type   | Description |
-| --------------- | ------ | ----------- |
-| planet:micd | float | **REQUIRED** Maximum Inscribed Circle Diameter (MICD)  is an intuitive proxy for the width of a field, even in case of rotated and narrow-but-curved fields.  |
-| planet:ca_ratio | float  | **REQUIRED** The Circumference-Area ratio (CA ratio) is calculated by dividing the circumference of a given polygon by the square root of its area. This ratio is then adjusted so that a circle corresponds to 0, and scaled so that a square corresponds to 1 |
-| planet:qa | uint8 |  **REQUIRED** Quality Assessment attribute, either 0 (good, micd > 30m), 1 (quality not guaranteed, micd < 30m) or 2 (polygons intersecting data availability grid) |
+| Property Name   | Type  | Description |
+| --------------- | ----- | ----------- |
+| planet:micd     | float | **REQUIRED** Maximum Inscribed Circle Diameter (MICD)  is an intuitive proxy for the width of a field, even in case of rotated and narrow-but-curved fields.  |
+| planet:ca_ratio | float | **REQUIRED** The Circumference-Area ratio (CA ratio) is calculated by dividing the circumference of a given polygon by the square root of its area. This ratio is then adjusted so that a circle corresponds to 0, and scaled so that a square corresponds to 1 |
+| planet:qa       | uint8 | **REQUIRED** Quality Assessment attribute, either 0 (good, micd > 30m), 1 (quality not guaranteed, micd < 30m) or 2 (polygons intersecting data availability grid) |
 
 ### planet:mcid
 
@@ -72,9 +68,9 @@ The ‘qa’ attribute presents three values:
 
 | Value | Description |
 | ----- | ------------|
-| 0 | Polygons for which the validation scores are representative, i.e. with MICD > 30 m. |
-| 1 | Polygons for which the validation scores are not representative, i.e. with MICD < 30 m. The quality for these polygons cannot be guaranteed. |
-| 2 | Polygons that are intersecting the border of the data availability grid |
+| 0     | Polygons for which the validation scores are representative, i.e. with MICD > 30 m. |
+| 1     | Polygons for which the validation scores are not representative, i.e. with MICD < 30 m. The quality for these polygons cannot be guaranteed. |
+| 2     | Polygons that are intersecting the border of the data availability grid |
 
 The provided example illustrates four types of polygons. Polygons outside of the AOI are removed from the output. The remaining ones (depicted with solid and diagonal
 fill) intersect with the AOI and are therefore kept in the output. Polygons that are intersecting the border of the data availability grid are also kept in the output and are
